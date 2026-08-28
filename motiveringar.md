@@ -2,7 +2,7 @@
 
 ## 1. Varför TOTP och inte SMS i den här applikationen?
 
-TOTP räknas fram lokalt i authenticator-appen på telefonen och skickas aldrig över nätet, så koden kan inte fångas via SIM-kapning eller SMS-avlyssning – attacker som SMS-koder ligger öppna för. Båda kan visserligen luras vidare av en realtids-phishing-proxy, så TOTP är inte immunt, men det tar bort en hel klass av billiga attacker som SMS är sårbart för. I den här applikationen, utan budget för hårdvarunycklar eller passkeys, är TOTP det starkaste realistiska förstahandsvalet. SMS är ändå bättre än ingen andra faktor alls, så för en användare utan smartphone kan det få finnas kvar som reserv.
+TOTP räknas fram lokalt i authenticator-appen på telefonen och skickas aldrig över nätet, så koden kan inte fångas via SIM-kapning eller SMS-avlyssning, attacker som SMS-koder ligger öppna för. Båda kan visserligen luras vidare av en realtids-phishing-proxy, så TOTP är inte immunt, men det tar bort en hel klass av billiga attacker som SMS är sårbart för. I den här applikationen, utan budget för hårdvarunycklar eller passkeys, är TOTP det starkaste realistiska förstahandsvalet. SMS är ändå bättre än ingen andra faktor alls, så för en användare utan smartphone kan det få finnas kvar som reserv.
 
 ## 2. Hur landade jag i antal försök och låsningstid?
 
